@@ -3,12 +3,12 @@ pipeline {
     stages {
         stage('Build') { 
             steps {
-                println "Build" 
+                print("Build") 
             }
         }
         stage('Test') { 
             steps {
-                println "Test" 
+                echo "Test" 
             }
         }
         stage('Deploy') { 
