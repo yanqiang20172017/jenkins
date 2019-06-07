@@ -1,5 +1,9 @@
 pipeline {
-   agent any
+   agent {
+        node {
+            label 'jenkins-master'
+            customWorkspace "${env.JOB_NAME}/${env.BUILD_NUMBER}"
+        }
    stages {
        stage ('Build') {
            steps {
