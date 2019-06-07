@@ -9,7 +9,7 @@ pipeline {
  
        stage ('Test') {
            steps {
-              sh "echo ${JAVA_HOME}"  //这个是Linux的执行
+              sh "echo hello"  //这个是Linux的执行
            }
        }
  
