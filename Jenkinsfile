@@ -1,7 +1,7 @@
 pipeline {
    agent {
         node {
-            label 'jenkins-master'
+            label 'k8s-node2'
             customWorkspace "${env.JOB_NAME}/${env.BUILD_NUMBER}"
         }
    }
